@@ -81,7 +81,7 @@
       bindings = <
       &mt ESC F1       &kp F2         &kp F3      &kp F4       &kp F5             &kp F6          &kp F7        &kp F8        &kp F9         &kp F10
       &mt LSHIFT PG_UP &mt LCTRL HOME &mt LALT UP &mt LCMD END &rgb_ug RGB_EFF    &kp C_PREV      &mt LCMD C_RW &mt LALT C_PP &mt LCTRL C_FF &mt RSHIFT C_NEXT
-      &kp PG_DN        &kp LEFT       &kp DOWN    &kp RIGHT    &rgb_ug RGB_HUI    &kp C_VOL_DN    &kp C_VOL_UP  &bt BT_PRV    &bt BT_NXT     &bt BT_CLR
+      &kp PG_DN        &kp LEFT       &kp DOWN    &kp RIGHT    &studio_unlock     &kp C_VOL_DN    &kp C_VOL_UP  &bt BT_PRV    &bt BT_NXT     &bt BT_CLR
                                                   &to 1        &to 0              &rgb_ug RGB_BRD &rgb_ug RGB_BRI
       >;
     };
