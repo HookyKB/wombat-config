@@ -6,7 +6,7 @@
 
 #include "wombat.dtsi"
 
-&kscan0 {
+&kscan_0 {
   row-gpios
     = <&pro_micro 14 GPIO_ACTIVE_HIGH>
     , <&pro_micro 16 GPIO_ACTIVE_HIGH>

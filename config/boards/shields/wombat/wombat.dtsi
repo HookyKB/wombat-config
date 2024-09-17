@@ -9,7 +9,7 @@
 
 / {
   chosen {
-    zmk,kscan = &kscan0;
+    zmk,kscan = &kscan_0;
     zmk,matrix_transform = &default_transform;
   };
 
@@ -25,7 +25,7 @@
     >;
   };
 
-  kscan0: kscan_0 {
+  kscan_0: kscan_0 {
       compatible = "zmk,kscan-gpio-matrix";
       label = "KSCAN";
       diode-direction = "row2col";
@@ -51,7 +51,7 @@
         display-name = "Default";
 
         kscan = <&kscan_0>;
-        transform = <&matrix_transform_0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   95       0     0     0>
