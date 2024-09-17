@@ -1,4 +1,2 @@
-firmware/wombat_left nice_view-nice_nano_v2-zmk.uf2
-firmware/wombat_right-nice_nano_v2-zmk.uf2
-firmware.zip
+firmware*
 .DS_Store
