@@ -46,7 +46,6 @@
   behaviors {
     tt: to_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "TO_TAP";
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <250>;
@@ -58,27 +57,27 @@
     compatible = "zmk,keymap";
 
     letters {
-      label = " Az";
+      display-name = " Az";
       bindings = <
       &mt GRAVE Q  &kp W       &kp F      &kp P       &kp G       &kp J     &kp L      &kp U      &kp Y       &mt MINUS SEMI
       &mt LSHIFT A &mt LCTRL R &mt LALT S &mt LCMD T  &kp D       &kp H     &mt LCMD N &mt LALT E &mt LCTRL I &mt RSHFT O
-      &kp Z        &kp X       &kp C      &kp V       &kp B       &kp K     &kp M      &kp CMMA   &kp DOT     &mt QUOT FSLH
+      &kp Z        &kp X       &kp C      &kp V       &kp B       &kp K     &kp M      &kp COMMA   &kp DOT     &mt SQT FSLH
                                           &lt 1 BSPC  &lt 2 RET   &lt 2 TAB &lt 1 SPACE
       >;
     };
 
     numbers {
-      label = " 123";
+      display-name = " 123";
       bindings = <
       &mt ESC N1       &kp N2         &kp N3      &kp N4       &kp N5       &kp N6    &kp N7        &kp N8        &kp N9          &mt MINUS N0
       &mt LSHIFT PG_UP &mt LCTRL HOME &mt LALT UP &mt LCMD END &kp LG(C)    &kp LPAR  &mt LCMD LBKT &mt LALT RBKT &mt LCTRL MINUS &mt RSHIFT EQUAL
-      &kp PG_DN        &kp LEFT       &kp DOWN    &kp RIGHT    &kp LG(V)    &kp RPAR  &kp BSLH      &kp CMMA      &kp DOT         &kp FSLH
+      &kp PG_DN        &kp LEFT       &kp DOWN    &kp RIGHT    &kp LG(V)    &kp RPAR  &kp BSLH      &kp COMMA      &kp DOT         &kp FSLH
                                                   &lt 3 BSPC   &lt 2 RET    &lt 2 TAB &lt 3 SPACE
       >;
     };
 
     control {
-      label = " <->";
+      display-name = " <->";
       bindings = <
       &mt ESC F1       &kp F2         &kp F3      &kp F4       &kp F5             &kp F6          &kp F7        &kp F8        &kp F9         &kp F10
       &mt LSHIFT PG_UP &mt LCTRL HOME &mt LALT UP &mt LCMD END &rgb_ug RGB_EFF    &kp C_PREV      &mt LCMD C_RW &mt LALT C_PP &mt LCTRL C_FF &mt RSHIFT C_NEXT
@@ -88,11 +87,11 @@
     };
 
     letters_high { // repeat of letters, so the temp layer transfer fom numbers will work
-      label = " Az";
+      display-name = " Az";
       bindings = <
       &mt GRAVE Q  &kp W       &kp E      &kp R       &kp T       &kp Y     &kp U      &kp I      &kp O       &mt MINUS P
       &mt LSHIFT A &mt LCTRL S &mt LALT D &mt LCMD F  &kp G       &kp H     &mt LCMD J &mt LALT K &mt LCTRL L &mt RSHFT SEMI
-      &kp Z        &kp X       &kp C      &kp V       &kp B       &kp N     &kp M      &kp CMMA   &kp DOT     &mt QUOT FSLH
+      &kp Z        &kp X       &kp C      &kp V       &kp B       &kp N     &kp M      &kp COMMA   &kp DOT     &mt SQT FSLH
                                           &lt 1 BSPC  &lt 2 RET   &lt 2 TAB &lt 1 SPACE
       >;
     };
